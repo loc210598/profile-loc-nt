@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0; 
+   }
+ 
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 60px;
+    z-index: 991;
+    transition: all 0.5s ease-in-out;
+    padding: 10px 0;
+    background: rgb(255, 255, 255) ;
+    border-bottom: 0.5px solid rgb(173, 172, 172);
+  }
+  
+  
+  #header .logo p {
+    font-size: 22px;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+
+/* hiệu ứng */
+  .nav-menu a:before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    border-bottom: 2px solid red;
+    transition: 0.5s all;
+    bottom: 0px;
+    right: 350px;
+ 
+
+  }
+  .nav-menu a:hover:before{
+    right: 0;
+
+  }
+  .nav-menu a:hover{
+      text-decoration: none;
+      color: red;
+  }
+
+  /* giữ thanh menu */
+  .fixx{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 991;
+    height: 60px;
+}
+ 
+
+/*--------------------------------------------------------------
+Thanh menu
+--------------------------------------------------------------*/
+
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    /* left: -45%; */
+    list-style: none;
+  }
+  
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+  }
+  .nav-menu > ul > li > a {
+    padding: 20px 25px;
+    overflow: hidden;
+    display: inline-block;
+    color: black;
+    position: relative;
+  }
+  .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: red;
+    text-decoration: none;
+
+
+  }
+  .icon{
+    height: 60px;
+    width: 160px;
+    margin-left: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon > a{
+      font-size: 25px;
+      color: #000;
+      display:block;
+      padding: 10px;
+  }
+.logo p{
+  font-size: 10px;
+}
+
+/* bắt đầu main */
+.trinh-dien{
+  margin-top: 60px;
+  width: 100%;
+  height: 600px;
+  background-image: url(assets/img/bg.jpg);
+  background-size: cover;
+}
+
+
+/* bắt dầu show tt */
+
+.info{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid gray;
+}
+/* vùng div avatar */
+.avatar{
+  width: 20%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.hinhtron{
+  width: 210px;
+  height: 210px;
+  background: rgb(255, 255, 255);
+  -moz-border-radius: 105px;
+  -webkit-border-radius: 105px;
+  --border-radius: 105px;
+  border-radius: 105px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border : 1px solid gray;
+  overflow: hidden;
+  
+}
+.avatarrr{
+  width: 190px;
+  height: 190px;
+  -moz-border-radius: 95px;
+  -webkit-border-radius: 95px;
+  --border-radius: 95px;
+  border-radius: 95px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(assets/img/avatar.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+/* vùng kết div avatar */
+
+.thong-tin{
+  width: 80%;
+  height: 100%;
+}
+
+.thong-tin h2 {
+  margin-top: 33px;
+  margin-bottom: 20px;
+  display: block;
+}
+.thong-tin p {
+  margin-top: 25px;
+  display: block;
+}
+
+
+
+/* bắt đầu ss dịch vụ */
+
+.dich-vu{
+background-color: rgb(252, 248, 248);
+margin: auto;
+}
+
+.uii{
+}
+.ui {
+  width: 27%;
+  height: 400px;
+  margin: auto;
+  margin-top: 13px;
+  margin-right: 13px;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 6px;
+}
+.ui h5{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.ui p{
+  text-align: center;
+}
+.img-dich-vu{
+  width: 280px;
+  height: 260px;
+  background-size: cover;
+}
+
+
+
+
+
+
+ .footer {
+   position: absolute;
+   bottom: 0;
+   position: fixed;
+   width: 100%;
+   height: 60px;
+   display: none;
+   background-color: white;
+   
+ }
+
+ #chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.a{
+  display: flex;
+  overflow: hidden;
+
+}
+.rep {    
+  margin:0;
+  display: block;
+  width: 20%;
+  height: 60px;
+}
+.rep a {
+  color: black; 
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+  .footer{
+    display: block;
+  }
+  .logo{
+    width: 70%;
+  }
+  .rep {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .avatar , .thong-tin {
+    width:100%;
+  }
+}
