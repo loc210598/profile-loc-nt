@@ -186,8 +186,6 @@ background-color: rgb(252, 248, 248);
 margin: auto;
 }
 
-.uii{
-}
 .ui {
   width: 27%;
   height: 400px;
@@ -207,10 +205,66 @@ margin: auto;
   text-align: center;
 }
 .img-dich-vu{
-  width: 280px;
+  margin-top: 5px;
+  width: 100%;
   height: 260px;
   background-size: cover;
+  border-radius: 2px;
 }
+
+/* bắt đầu ss exp */
+
+.exp1{
+  height: 180px;
+}
+
+.exp2{
+  height: 250px;
+  margin-top: 20px;
+
+}
+
+.exp3{
+  width: 25%;
+  height: 210px;
+  margin: auto;
+  margin-top: 13px;
+  margin-right: 13px;
+  border: 1px solid gray;
+  background-color: white;
+  box-shadow: 2px 4px #888888;
+}
+
+.exp4{
+  height: 500px;
+  margin-top: 100px;
+}
+
+.exp4-img{
+
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+
+}
+
+.chieu-nghi{
+  background-color: hotpink;
+  background-image: url(assets/img/bg-paint.jpg);
+}
+
+
+
+/* bắt đầu ss end */
+.end {
+  background-color: black;
+  height: 400px;
+  color: white;
+}
+
+
+
+
 
 
 
